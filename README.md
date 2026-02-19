@@ -1,4 +1,4 @@
-# 🦷 Website: Clínica de Odontologia da universidade
+# 🦷 Website: Clínica de Odontologia da Universidade
 
 Projeto desenvolvido para auxiliar na gestão da clínica odontológica, com o objetivo de facilitar o cadastro e agendamento de pacientes.
 
