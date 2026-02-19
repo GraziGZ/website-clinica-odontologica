@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('../img/img-odonto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: drop-shadow(3px 6px 7px rgba(0, 0, 0, 2));
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00000050;
+
+    >div {
+        width: 550px;
+        background-color: #ffffff50;
+        border-radius: 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        padding: 12px;
+
+        form {
+            h1 {
+                color: #ffffff;
+                text-shadow: 0 5px 5px rgb(0, 0, 0);
+                margin: 40px auto;
+                text-align: center;
+                font-size: 50px;
+            }
+
+            .login {
+                padding: 20px;
+                text-align: center;
+                font-size: 25px;
+
+                p {
+                    font-size: 30px;
+
+                }
+
+                #email {
+                    width: 300px;
+                    height: 44px;
+                    padding: 8px 12px;
+                    box-sizing: border-box;
+                    font-size: 20px;
+                }
+
+                #senha {
+                    width: 300px;
+                    height: 44px;
+                    padding: 8px 12px;
+                    box-sizing: border-box;
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+                color: #ffffff;
+                font-size: 20px;
+
+                /* botões de entrar e sair */
+                a {
+                    padding: 13px;
+                    background-color: #242553;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+                }
+
+                /* quando passar o mouse nos botões */
+                a:hover {
+                    padding: 15px 25px;
+                    background-color: #ffffff;
+                    color: #1103dd;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            /* chamada da classe do botão, alterando ele e o hover */
+            .button {
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+
+                button[type="submit"] {
+                    border: none;
+                    padding: 13px;
+                    font-size: 18px;
+                    color: #ffffff;
+                    background: #242553;
+                    border-radius: 10px;
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+                }
+
+                button[type="submit"]:hover {
+                    padding: 13px;
+                    width: 100px;
+                    font-size: 18px;
+                    color: #1103dd;
+                    background: #ffffff;
+                    transition: 0.3s;
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+
+    .rec-login {
+        width: 550px;
+        background-color: #ffffff50;
+        border-radius: 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+
+        h2 {
+            color: #ffffff;
+            text-shadow: 0 5px 5px rgb(0, 0, 0);
+            margin: 40px auto;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        p {
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .campo {
+            display: flex;
+            padding: 13px;
+            text-decoration: none;
+            border-radius: 5px;
+            justify-content: center;
+            flex-direction: column;
+
+            label {
+                display: flex;
+                padding: 8px;
+                font-size: 20px;
+            }
+
+            input[type="email"] {
+                height: 30px;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            input[type="password"] {
+                height: 30px;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* 
+font-family: "Roboto", sans-serif;
+font-family: "Anton", sans-serif;
+font-family: "Lobster", sans-serif;
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('../img/img-odonto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: drop-shadow(3px 6px 7px rgba(0, 0, 0, 2));
+    height: 100vh;
+    margin: 0;
+}
+
+.site {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+
+    .site {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 70px;
+            /* Tamanho da logo do header */
+        }
+
+        h1 {
+            width: 280px;
+            height: 100px;
+            background: url(../img/logo1.png) no-repeat;
+            background-size: 100% 100%;
+            text-indent: -9999px;
+            /*indentação negativa para sumir da página*/
+            margin: 15px 0;
+        }
+
+        article {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            align-items: end;
+
+            nav ul {
+                display: flex;
+                align-items: center;
+                padding: 1rem 3rem;
+                font-family: "Anton", sans-serif;
+                font-size: 18px;
+                text-transform: uppercase;
+                justify-content: end;
+                height: 25px;
+
+                li {
+                    margin: 2px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        /*decoração do link, nenhuma - tira o sublinhado*/
+                        margin: 20px;
+                    }
+
+                    img {
+                        height: 25px;
+                        border: 2px solid rgb(255, 255, 255);
+                        border-radius: 50%;
+                    }
+
+                    a:hover {
+                        /*quando passar o mouse por cima*/
+                        color: #FFD700;
+                        font-size: 20px;
+
+                        /* faz alterações na imagem de login ao passar o mouse */
+                        img {
+                            height: 27px;
+                            border: 2px solid rgb(250, 225, 0);
+                            box-shadow: 0 4px 4px rgba(255, 255, 255, 0.5);
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+ backdrop-filter: blur(10px);
+    .curso {
+        display: flex;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 40px;
+        border-radius: 30px;
+        backdrop-filter: blur(10px);
+
+        .site {
+            h2 {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 50px;
+                color: #ffffff;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+
+                div {
+                    /* trata os quadrados com cada semestre do curso */
+                    margin: 30px 10px;
+                    width: 300px;
+                    height: 360px;
+                    border: 4px solid;
+                    border-radius: 30px;
+                    filter: drop-shadow(3px 6px 7px rgba(0, 0, 0, 2));
+                    background-color: #001c5850;
+                    
+                    h3 {
+                        padding: 20px;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #FFD700;
+                    }
+
+                    h4 {
+                        line-height: 1.3;
+                        text-align: center;
+                        padding: 2px;
+                        color: white;
+                        text-overflow: clip;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    
+    .rodape {
+        background-color: #ffffff;
+        margin: 5px 0 0 0;
+        padding: 20px 0;
+        box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.5);
+
+        p {
+            font-size: 20px;
+            text-align: center;
+
+        }
+    }
+}
+
+@media(max-width:480px) {
+    header {
+        .site {
+            >img {
+                display: none;
+            }
+
+            article {
+                display: flex;
+                justify-content: center;
+
+                nav ul {
+                    font-size: 18px;
+                    padding: 1rem 0.1rem;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    main {
+        .curso {
+            .site {
+
+                >div {
+
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+
+                    div {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* 
+font-family: "Roboto", sans-serif;
+font-family: "Anton", sans-serif;
+font-family: "Lobster", sans-serif;
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('../img/img-odonto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: drop-shadow(3px 6px 7px rgba(0, 0, 0, 2));
+    height: 100vh;
+    margin: 0;
+}
+
+.site {
+    width: 100%;
+    max-width: 900px;
+    /*máximo 1200*/
+    margin: 0 auto;
+}
+
+
+header {
+    height: 100px;
+    width: 100%;
+    
+    .site {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 70px;
+            /* Tamanho da logo do header ;*/
+        }
+
+        h1 {
+            width: 280px;
+            height: 100px;
+            background-size: 100% 100%;
+            text-indent: -9999px;
+            /*indentação negativa para sumir da página*/
+            margin: 15px 0;
+        }
+
+        article {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            align-items: end;
+
+            nav ul {
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 1rem 3rem;
+                font-family: "Anton", sans-serif;
+                font-size: 18px;
+                text-transform: uppercase;
+                justify-content: end;
+                height: 25px;
+                
+
+                li {
+                    margin: 2px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        /*decoração do link, nenhuma - tira o sublinhado*/
+                        margin: 20px;
+                    }
+
+                    img {
+                        height: 30px;
+                        border: 2px solid rgb(255, 255, 255);
+                        border-radius: 50%;
+                    }
+
+                    a:hover {
+                        /*quando passar o mouse por cima*/
+                        color: #FFD700;
+
+                        /* faz alterações na imagem de login ao passar o mouse */
+                        img {
+                            height: 30px;
+                            border: 2px solid rgb(250, 225, 0);
+                            box-shadow: 0 4px 4px rgba(255, 255, 255, 0.5);
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .professores {
+        display: flex;
+        height: auto;
+        width: 200%;
+        justify-content: center;
+
+        img {
+            display: flex;
+            width: 100%;
+            background: rgb(73, 28, 197);
+        }
+
+        /* botão esquerdo do banner */
+        .slick-prev {
+            left: 25px;
+            z-index: 99;
+        }
+
+        /* botão direito do banner */
+        .slick-next {
+            right: 25px;
+            color: #cec000;
+        }
+
+        /* alteração de ambos botões: tamanho, opacidade e cor */
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 30px;
+            opacity: .5;
+            color: #cec000;
+        }
+    }
+
+    /* resumo dos professores */
+    .equipe {
+        padding: 50px 0;
+
+        .site {
+
+            h2 {
+                text-align: center;
+                margin-bottom: 40px;
+                color: aliceblue;
+                font-size: 35px;
+            }
+
+            >div {
+                display: flex;
+                text-align: center;
+                margin-bottom: 25px;
+
+                /* fundo da parte dos professores */
+                section {
+                    display: flex;
+                    text-align: center;
+                    margin-bottom: 25px;
+                    background: rgba(0, 0, 0, 0.589);
+                    border-radius: 30px;
+                    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.5);
+
+                    div {
+                        padding: 35px;
+
+                        h3 {
+                            color: white;
+                            font-size: 25px;
+                            margin-bottom: 10px;
+                        }
+
+                        img {
+                            border-radius: 50px;
+                            height: 200px;
+                            width: 200px;
+                            margin-bottom: 50px;
+                        }
+
+                        h4 {
+                            color: white;
+                            margin-bottom: 15px;
+                            font-size: 30px;
+                        }
+                    }
+
+                    div {
+                        p {
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            color: aliceblue;
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                            line-height: 20px;
+                            margin-top: 50px;
+                        }
+                    }
+
+                    a {
+                        color: #FFD700;
+                        font-size: 20px;
+                        text-decoration: none;
+                        text-shadow: 0 5px 5px rgb(0, 0, 0);
+                    }
+
+                    a:hover {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .rodape {
+        background-color: #ffffff;
+        margin: 5px 0 0 0;
+        padding: 20px 0;
+        box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.5);
+
+        p {
+            font-size: 20px;
+            text-align: center;
+
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    header {
+        .site {
+            article {
+                nav ul {
+                    font-size: 18px;
+                    padding: 2rem 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 481px) {
+
+    .abrirMenu,
+    .fecharMenu {
+        display: none;
+    }
+}
+
+@media(max-width: 480px) {
+    .menuAtivo {
+        header {
+            nav {
+                right: 0px !important;
+            }
+        }
+    }
+
+    header {
+
+        .site {
+            article {
+                .abrirMenu {
+                    background: url(../img/menu.png) no-repeat;
+                    width: 50px;
+                    height: 50px;
+                    background-size: 100% 100%;
+                    /*100% da altura e 100% da largura*/
+                    border: none;
+                    right: 5%;
+                    top: 3%;
+                    /* position: fixed; */
+
+                }
+
+                nav {
+                    position: fixed;
+                    height: 100%;
+                    z-index: 9999;
+                    background: #f1da0a71;
+                    top: 0;
+                    width: 50%;
+                    padding: 10px;
+                    max-width: 240px;
+                    right: -300px;
+                    transition: right 1s ease-out;
+
+                    .fecharMenu {
+                        background: url(../img/fechar.png) no-repeat;
+                        width: 50px;
+                        height: 50px;
+                        background-size: 100% 100%;
+                        /*100% da altura e 100% da largura*/
+                        border: none;
+                    }
+
+                    ul {
+                        flex-direction: column;
+                        height: auto;
+
+                        li {
+                            margin: 15px auto;
+                            font-size: 1.5em;
+                            /*como se fosse porcentagem 1 - 100% e 5 aumenta em 50% o padrão que estamos usando para a fonte*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+        .equipe {
+            .site {
+                >div {
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 5px;
+
+                        div {
+                            padding: 5px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
