@@ -4,6 +4,11 @@ Projeto desenvolvido para auxiliar na gestão da clínica odontológica, com o o
 
 Desenvolvido pelo Grupo 1 – 4º semestre de Análise e Desenvolvimento de Sistemas – 2025, da Universidade Brasil – Campus São Paulo.
 
+## 🌐 Acesso ao Projeto
+
+🔗 Acesse o sistema online:
+https://4semestre.ubsistema.com.br/projeto/ProjetoOdont/ProjetoOdontologia/public/
+
 # 📌 Planejamento
 
 Para proporcionar uma experiência alinhada às práticas do mercado, utilizamos metodologia ágil com práticas DevOps, organizando as atividades e o fluxo do projeto com:
