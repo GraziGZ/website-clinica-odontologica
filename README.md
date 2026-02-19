@@ -9,7 +9,7 @@ Desenvolvido pelo Grupo 1 – 4º semestre de Análise e Desenvolvimento de Sist
 🔗 Acesse o sistema online:
 https://4semestre.ubsistema.com.br/projeto/ProjetoOdont/ProjetoOdontologia/public/
 
-# 📌 Planejamento
+## 📌 Planejamento
 
 Para proporcionar uma experiência alinhada às práticas do mercado, utilizamos metodologia ágil com práticas DevOps, organizando as atividades e o fluxo do projeto com:
 - Trello
@@ -17,7 +17,7 @@ Para proporcionar uma experiência alinhada às práticas do mercado, utilizamos
   
 O projeto proporcionou experiência prática em desenvolvimento de software, organização de processos, trabalho em equipe e aplicação de boas práticas desde o planejamento até a entrega final.
 
-# 🛠️ Desenvolvimento
+## 🛠️ Desenvolvimento
 Durante o desenvolvimento, realizamos:
 
 - Definição da arquitetura do site com foco na experiência do usuário 
@@ -27,7 +27,7 @@ Durante o desenvolvimento, realizamos:
 - Elaboração de documentação técnica do sistema
 - Realização de testes antes da implementação e entrega, garantindo qualidade, funcionamento adequado e redução de possíveis falhas.
 
-# 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
